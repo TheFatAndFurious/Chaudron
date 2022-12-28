@@ -1,0 +1,154 @@
+body {
+  background-color: #fffbfc;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-banner {
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fffbfc;
+  border-bottom: #7c7c7c 1px solid;
+  text-shadow: 0px 3px 3px grey;
+  z-index: 999;
+}
+.container-banner h1 {
+  padding-top: 10px;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.container-banner h3 {
+  color: #ff9f1c;
+  font-size: 20px;
+}
+
+main {
+  padding-top: 120px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+main .horaires {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Nunito";
+  color: #7c7c7c;
+  padding-bottom: 25px;
+}
+main .horaires .jour, main .horaires .lieu {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+main .horaires .jour ul, main .horaires .lieu ul {
+  display: block;
+  margin: 0 auto;
+}
+main .horaires .jour {
+  color: black;
+}
+main .container-photo-principale {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+main .container-photo-principale img {
+  box-shadow: 0 3px 3px grey;
+  border-radius: 3px;
+  min-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+main .container-photo-principale p {
+  text-align: center;
+  font-family: "Nunito";
+  color: black;
+  box-shadow: 0px 3px 3px #7c7c7c;
+}
+main .container-texte-presentation {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "Nunito";
+}
+main h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  text-align: center;
+  padding-top: 25px;
+  color: #7c7c7c;
+}
+main .container-menu h2, main .container-marches h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-shadow: 0px 2px 2px grey;
+  text-transform: uppercase;
+}
+main .container-menu h3, main .container-marches h3 {
+  text-align: center;
+  font-family: "Montserrat";
+  color: #7c7c7c;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+main .container-menu p, main .container-marches p {
+  font-family: "Nunito";
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+main .menu {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 3px grey;
+  border-radius: 2px;
+  margin-top: 40px;
+}
+main .menu img {
+  height: auto;
+  width: 100%;
+}
+main .marche {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .marche img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: black;
+  margin-top: 25px;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 90%;
+  margin: 0 auto;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Nunito";
+}
+.container-footer .contact, .container-footer .marches {
+  display: block;
+}
+.container-footer h3 {
+  font-weight: bolder;
+  padding-bottom: 5px;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

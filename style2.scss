@@ -1,0 +1,185 @@
+@media only screen and (min-width: 1200px) {
+
+body{
+    background-color: #fffbfc;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container-banner {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fffbfc;
+    border-bottom: #7c7c7c 2px solid;
+    text-shadow: 0px 3px 3px grey;
+    z-index: 999;
+    
+    h1{
+        padding-top: 20px;
+        font-size: 40px;
+        padding-bottom: 10px;
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    h3{
+        color: #ff9f1c;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+main{
+    padding-top: 220px;
+    max-width: 90%;
+    margin: 0 auto;
+
+    .horaires {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: 'Nunito';
+        color: #7c7c7c;
+        padding-bottom: 25px;
+        font-size: 25px;
+        // box-shadow: 0 3px 3px grey;
+        // border-radius: 3px;
+
+        
+        .jour, .lieu {
+            min-width:50%;  
+            display: flex;
+            justify-content: center;
+            ul {
+                display: block;
+                margin: 0 auto;
+            } 
+        }
+        
+        .jour {
+            color: black;
+
+        }
+    }
+
+    .container-photo-principale{
+        padding-top: 100px;
+        padding-bottom: 20px;
+        position: relative;
+        margin: 0 auto;
+
+        img{
+            box-shadow: 0 3px 3px grey;
+            border-radius: 3px;
+            min-height: 100%;
+            margin: 0 auto;
+            display: block;
+            max-width: 1000px;
+
+        }
+    }
+
+    .container-texte-presentation{
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: justify;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-family: 'Nunito';
+        font-size: 25px;
+
+    }
+    //Au memu + venez me rendre visite...
+    h1{
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Montserrat';
+        text-align: center;
+        padding-top: 25px;
+        color: #7c7c7c;
+        margin-top: 200px;
+        text-transform: uppercase;
+    }
+    .container-menu, .container-marches{
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 100PX;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        
+
+        h2{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 25px;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            text-shadow: 0px 2px 2px grey;
+            text-transform: uppercase;
+        }
+        h3 { 
+            text-align: center;
+            font-family: 'Montserrat';
+            color: #7c7c7c;
+            padding-bottom: 10px;
+            font-size: 20px;
+        
+        }
+
+        p{
+            font-family: 'Nunito';
+            text-align: justify;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 10px;
+        }
+    }
+    .menu{
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 3px grey;
+        border-radius: 2px;
+
+
+
+        img{
+            height: auto;
+            width: 100%;
+        }
+
+    }
+    }
+footer {
+    background-color: black;
+    margin-top: 25px;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Nunito';
+
+    .contact, .marches {
+        display: block;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+}
+}
