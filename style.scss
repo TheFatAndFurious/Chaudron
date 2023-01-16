@@ -1,174 +1,387 @@
-body{
-    background-color: #fffbfc;
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.container-banner {
-    width: 100%;
-    text-align: center;
-    font-family: 'Montserrat';
-    font-weight: bold;
+body {
+    position: relative;
+    background-color: black;
+}
+
+
+/*---------------------------------------------NAV + BURGER-------------------------------------*/
+nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fffbfc;
-    border-bottom: #7c7c7c 1px solid;
-    text-shadow: 0px 3px 3px grey;
-    z-index: 999;
-    
-    h1{
-        padding-top: 10px;
-        font-size: 25px;
-        padding-bottom: 10px;
-        
-
-    }
-    h3{
-        color: #ff9f1c;
-        font-size: 20px;
-    }
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 50px;
+    z-index: 100;
 }
 
-main{
-    padding-top: 120px;
-    max-width: 90%;
-    margin: 0 auto;
-
-    .horaires {
-        display: flex;
-        max-width: 400px;
-        margin: 0 auto;
-        font-family: 'Nunito';
-        color: #7c7c7c;
-        padding-bottom: 25px;
-        
-        .jour, .lieu {
-            min-width:50%;  
-            display: flex;
-            justify-content: center;
-            ul {
-                display: block;
-                margin: 0 auto;
-            } 
-        }
-        
-        .jour {
-            color: black;
-
-        }
-    }
-
-    .container-photo-principale{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        position: relative;
-
-        img{
-            box-shadow: 0 3px 3px grey;
-            border-radius: 3px;
-            min-height: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        p{
-            text-align: center;
-            font-family: 'Nunito';
-            color: black;
-            box-shadow: 0px 3px 3px #7c7c7c;
-        }
-    }
-
-    .container-texte-presentation{
-        max-width: 80%;
-        margin: 0 auto;
-        text-align: justify;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        font-family: 'Nunito';
-
-    }
-    h1{
-        font-size: 40px;
-        font-weight: bolder;
-        font-family: 'Montserrat';
-        text-align: center;
-        padding-top: 25px;
-        color: #7c7c7c;
-    }
-    .container-menu, .container-marches{
-        h2{
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 10px;
-            font-size: 20px;
-            font-family: 'Montserrat';
-            font-weight: bold;
-            text-shadow: 0px 2px 2px grey;
-            text-transform: uppercase;
-        }
-        h3 { 
-            text-align: center;
-            font-family: 'Montserrat';
-            color: #7c7c7c;
-            padding-bottom: 10px;
-            font-size: 20px;
-        
-        }
-
-        p{
-            font-family: 'Nunito';
-            text-align: justify;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-    }
-    .menu{
-        margin-bottom: 20px;
-        box-shadow: 0px 4px 3px grey;
-        border-radius: 2px;
-        margin-top: 40px;
-
-
-        img{
-            height: auto;
-            width: 100%;
-        }
-
-    }
-    .marche {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-    }
-footer {
-    background-color: black;
-    margin-top: 25px;
-}
-
-.container-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 90%;
-    margin: 0 auto;
-    color: white;
+nav .mainMenu {
+    display: flex;
+    list-style: none;
     padding-top: 25px;
-    padding-bottom: 25px;
-    font-family: 'Nunito';
+}
 
-    .contact, .marches {
+
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+nav .mainMenu li a:hover {
+    /* background: blue; */
+    color: grey;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+ .fa-facebook:hover {color: rgb(0, 110, 255);}
+ .fa-youtube:hover {color: red;}
+ .fa-instagram:hover {color: rgb(255, 0, 191);}
+ .fa-tiktok:hover {color: rgb(255, 123, 0);}
+
+ nav .logo {
+    margin: 6px;
+    width: 200px;
+    cursor: pointer;
+ }
+
+ nav .logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+ }
+
+ .mobile {
+    display: none;
+ }
+
+ @media(max-width: 1200px){
+nav .logo {
+    width: 100px;
+}
+    nav {
+        padding-right: 0;
+    }
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 20px;
+    }
+    nav .openMenu {
         display: block;
     }
-
-    h3 {
-        font-weight: bolder;
-        padding-bottom: 5px;
-        font-size: 20px;
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
     }
 }
+
+@media(max-width: 800px){
+   .desktop {
+       display: none;
+   }
+   .mobile {
+       display: block;
+       min-height: 100vh;
+       max-width: 100vw; 
+       object-fit: cover;
+       object-position: 50% 50%;
+   }
+}
+ /*******************VIDEO - PHOTO********************************************/
+ main {
+    width: 100%;
+    background-color: #000;
+ }
+
+ .myVideo {
+   min-width: 100vw;
+   max-height: 100vh;
+   object-fit: cover;
+ }
+
+ /*----------------------------------------------FOOTER--------------------------------------*/
+ footer {
+  height: auto;
+  padding-top: 40px;
+  width: 100vw;
+  color: white;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+
+    p {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: #cacdd2;
+
+    }
+  }
+
+  .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+    li{
+      margin: 0 10px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 8px;
+        border-radius: 50%;
+        width: 35px;
+      }
+    }
+  }
+
+  .footer-menu {
+    margin-bottom: 20px;
+
+    ul{
+      display: flex;
+
+      li {
+        padding-right: 10px;
+        display: block;
+
+        a {
+          color: #cfd2d6;
+          border: 1.3px solid white;
+          padding: 6px 15px;
+          border-radius: 50px;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #27bcda;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: grey;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+
+      a {
+        color: #44bae8;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+  @media (max-width:500px) {
+   .footer-menu ul {
+      display: inline;
+    }
+     .footer-menu ul li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+  .coaching-domicile {
+
+    max-width: 80%;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: red;
+  }
+
+  /*------------------------------CONTACT---------------------------------*/
+  .contact {
+    padding: 40px 15%;
+    // background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    font-family: 'Montserrat';
+  }
+  
+  .contact-img img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px grey
+  }
+  
+  .contact-form h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: white;
+    span {
+      color: red;
+    }
+  }
+  
+  .contact-form p {
+    color: #f1f1f1;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+  }
+  
+  .contact-form form {
+    position: relative;
+  }
+  
+  .contact-form form input, form textarea {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px grey
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 200px;
+  }
+  
+  .contact-form form .btn {
+    display: inline-block;
+    background: #bb9860;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+  }
+  
+  .contact-form form .btn:hover {
+    border: 2px solid #f9004d;
+    background: transparent;
+    scale: (1.1);
+    color: #000;
+  
+  }
+  
+  @media (max-width: 1570px) {
+    .contact {
+      padding: 80px 3%;
+      transition: .2s;
+    }
+    .contact-form h1 {
+      font-size: 60px;
+    }
+    .contact-form p {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media (max-width: 1090px) {
+    .contact {
+      grid-gap: 2rem;
+      transition: .3s;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .contact {
+      grid-template-columns: 1fr;
+    }
+    .contact-form {
+      order: 2;
+    }
+    .contact-img img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  
+
