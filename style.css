@@ -1,11 +1,11 @@
 body {
-  background-color: #fffbfc;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 .container-banner {
+  display: flex;
   width: 100%;
   text-align: center;
   font-family: "Montserrat";
@@ -13,11 +13,22 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fffbfc;
+  background-color: #bea378;
   border-bottom: #7c7c7c 1px solid;
   text-shadow: 0px 3px 3px grey;
   z-index: 999;
-  box-shadow: 0px 2px 3px black;
+  box-shadow: 0px 3px 3px grey;
+}
+.container-banner .logo img {
+  max-height: 140px;
+  padding-left: 30px;
+}
+.container-banner .titres {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  width: 100vw;
 }
 .container-banner h1 {
   padding-top: 10px;
@@ -55,13 +66,18 @@ main .horaires .jour ul, main .horaires .lieu ul {
 main .horaires .jour {
   color: black;
 }
+main .container-main {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px 0px grey;
+  background-color: #bea378;
+}
 main .container-photo-principale {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 5px;
   position: relative;
 }
 main .container-photo-principale img {
-  box-shadow: 0 3px 3px grey;
+  box-shadow: 5px 5px 15px 0px grey;
   border-radius: 3px;
   min-height: 100%;
   display: block;
@@ -77,7 +93,6 @@ main .container-texte-presentation {
   max-width: 80%;
   margin: 0 auto;
   text-align: justify;
-  padding-top: 50px;
   padding-bottom: 20px;
   font-family: "Nunito";
 }
@@ -109,18 +124,21 @@ main .container-menu h3, main .container-marches h3 {
 main .container-menu p, main .container-marches p {
   font-family: "Nunito";
   text-align: justify;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px 5px;
 }
 main .menu {
   margin-bottom: 20px;
-  box-shadow: 0px 4px 3px grey;
-  border-radius: 2px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 0px grey;
   margin-top: 30px;
+  background-color: #bea378;
 }
 main .menu img {
   height: auto;
   width: 100%;
+  padding: 0 5px;
+  border-radius: 10px;
 }
 main .marche {
   margin-top: 40px;
@@ -163,4 +181,95 @@ hr {
   border-style: inset;
   border-width: 2px;
   width: 50%;
+}
+
+/*----------------------------------------------FOOTER--------------------------------------*/
+footer {
+  height: auto;
+  padding-top: 40px;
+  width: 100vw;
+  color: white;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+footer .footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+footer .footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+footer .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+footer .socials li {
+  margin: 0 10px;
+}
+footer .socials li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 8px;
+  border-radius: 50%;
+  width: 35px;
+}
+footer .footer-menu {
+  margin-bottom: 20px;
+}
+footer .footer-menu ul {
+  display: flex;
+}
+footer .footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+footer .footer-menu ul li a {
+  color: #cfd2d6;
+  border: 1.3px solid white;
+  padding: 6px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+footer .footer-menu ul li a:hover {
+  color: #27bcda;
+}
+footer .footer-bottom {
+  background-color: grey;
+  width: 100vw;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-bottom p {
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+footer .footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  footer .footer-menu ul {
+    display: inline;
+  }
+  footer .footer-menu ul li {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

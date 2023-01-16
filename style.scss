@@ -1,11 +1,12 @@
 body{
-    background-color: #fffbfc;
+    // background-color: #e4d5b7;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 .container-banner {
+    display: flex;
     width: 100%;
     text-align: center;
     font-family: 'Montserrat';
@@ -13,11 +14,26 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fffbfc;
+    background-color: #bea378;
     border-bottom: #7c7c7c 1px solid;
     text-shadow: 0px 3px 3px grey;
     z-index: 999;
-    box-shadow: 0px 2px 3px black;
+    box-shadow: 0px 3px 3px grey;
+
+    .logo {
+        img{
+            max-height: 140px;
+            padding-left: 30px;
+        }
+    }
+
+    .titres {
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        width: 100vw;
+    }
 
     
     h1{
@@ -62,14 +78,18 @@ main{
 
         }
     }
-
+    .container-main {
+        border: 1px solid black;
+        border-radius: 3px;
+        box-shadow: 5px 5px 15px 0px grey;
+        background-color: #bea378;
+    }
     .container-photo-principale{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 5px;
         position: relative;
 
         img{
-            box-shadow: 0 3px 3px grey;
+            box-shadow: 5px 5px 15px 0px grey;
             border-radius: 3px;
             min-height: 100%;
             display: block;
@@ -88,7 +108,6 @@ main{
         max-width: 80%;
         margin: 0 auto;
         text-align: justify;
-        padding-top: 50px;
         padding-bottom: 20px;
         font-family: 'Nunito';
 
@@ -124,20 +143,24 @@ main{
         p{
             font-family: 'Nunito';
             text-align: justify;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding: 10px 5px
+
         }
     }
     .menu{
         margin-bottom: 20px;
-        box-shadow: 0px 4px 3px grey;
-        border-radius: 2px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px 0px grey;
         margin-top: 30px;
+        background-color: #bea378;
 
 
         img{
             height: auto;
             width: 100%;
+            padding: 0 5px;
+            border-radius: 10px;
         }
 
     }
@@ -184,4 +207,110 @@ hr {
     border-style: inset;
     border-width: 2px;
     width: 50%;
+  }
+
+  /*----------------------------------------------FOOTER--------------------------------------*/
+ footer {
+    height: auto;
+    padding-top: 40px;
+    width: 100vw;
+    color: white;
+  
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  
+      h3 {
+        font-size: 2.1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 3rem;
+      }
+  
+      p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: #cacdd2;
+  
+      }
+    }
+  
+    .socials {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+  
+      li{
+        margin: 0 10px;
+  
+        a {
+          text-decoration: none;
+          color: #fff;
+          border: 1.1px solid white;
+          padding: 8px;
+          border-radius: 50%;
+          width: 35px;
+        }
+      }
+    }
+  
+    .footer-menu {
+      margin-bottom: 20px;
+  
+      ul{
+        display: flex;
+  
+        li {
+          padding-right: 10px;
+          display: block;
+  
+          a {
+            color: #cfd2d6;
+            border: 1.3px solid white;
+            padding: 6px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+          }
+  
+          a:hover {
+            color: #27bcda;
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      background-color: grey;
+      width: 100vw;
+      padding: 20px;
+      text-align: center;
+  
+      p {
+        text-align: center;
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+  
+        a {
+          color: #44bae8;
+          font-size: 16px;
+          text-decoration: none;
+        }
+      }
+    }
+    @media (max-width:500px) {
+     .footer-menu ul {
+        display: inline;
+      }
+       .footer-menu ul li {
+        margin-bottom: 20px;
+      }
+    }
   }
