@@ -14,9 +14,9 @@
     top: 0;
     left: 0;
     background-color: #fffbfc;
-    border-bottom: #7c7c7c 2px solid;
     text-shadow: 0px 3px 3px grey;
     z-index: 999;
+    box-shadow: 0px 3px 3px black;
   }
   .container-banner h1 {
     padding-top: 20px;
@@ -43,7 +43,7 @@
     font-family: "Nunito";
     color: #7c7c7c;
     padding-bottom: 25px;
-    font-size: 25px;
+    font-size: 30px;
   }
   main .horaires .jour, main .horaires .lieu {
     min-width: 50%;
@@ -69,7 +69,7 @@
     min-height: 100%;
     margin: 0 auto;
     display: block;
-    max-width: 1000px;
+    min-width: 1000px;
   }
   main .container-texte-presentation {
     max-width: 800px;
@@ -78,7 +78,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     font-family: "Nunito";
-    font-size: 25px;
+    font-size: 30px;
   }
   main h1 {
     font-size: 50px;
@@ -91,7 +91,7 @@
     text-transform: uppercase;
   }
   main .container-menu, main .container-marches {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding-top: 100PX;
     display: grid;
@@ -113,7 +113,7 @@
     text-align: center;
     font-family: "Montserrat";
     color: #7c7c7c;
-    padding-bottom: 10px;
+    padding: 10px;
     font-size: 20px;
   }
   main .container-menu p, main .container-marches p {
@@ -121,16 +121,24 @@
     text-align: justify;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 5px;
     margin-top: 10px;
   }
   main .menu {
     margin-bottom: 20px;
     box-shadow: 0px 4px 3px grey;
     border-radius: 2px;
+    display: grid;
+    grid-template-rows: 0.5fr 5fr 2fr;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 1px solid grey;
   }
   main .menu img {
-    height: auto;
-    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   footer {
     background-color: black;
