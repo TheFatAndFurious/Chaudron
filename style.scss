@@ -1,5 +1,5 @@
 body{
-    // background-color: #e4d5b7;
+    background-color: #DBE9EE;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #bea378;
+    background-color: #C0D6DF;
     border-bottom: #7c7c7c 1px solid;
     text-shadow: 0px 3px 3px grey;
     z-index: 999;
@@ -44,14 +44,14 @@ body{
 
     }
     h3{
-        color: #ff9f1c;
+        color: #4F6D7A;
         font-size: 20px;
         margin-bottom: 10px;
     }
 }
 
 main{
-    padding-top: 120px;
+    padding-top: 150px;
     max-width: 90%;
     margin: 0 auto;
 
@@ -60,7 +60,7 @@ main{
         max-width: 400px;
         margin: 0 auto;
         font-family: 'Nunito';
-        color: #7c7c7c;
+        color: #4F6D7A;
         padding-bottom: 25px;
         
         .jour, .lieu {
@@ -79,10 +79,10 @@ main{
         }
     }
     .container-main {
-        border: 1px solid black;
+        // border: 1px solid #4F6D7A;
         border-radius: 3px;
         box-shadow: 5px 5px 15px 0px grey;
-        background-color: #bea378;
+        background-color: #C0D6DF;
     }
     .container-photo-principale{
         padding: 20px 5px;
