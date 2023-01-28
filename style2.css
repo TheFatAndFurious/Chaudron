@@ -15,12 +15,22 @@
     max-width: 600px;
     font-size: 30px;
   }
-  main .container-photo-principale {
-    padding-top: 100px;
+  main .container-main {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 2rem;
+    margin-top: 60px;
+  }
+  main .container-main .container-photo-principale {
     margin: 0 auto;
   }
-  main .container-photo-principale img {
-    min-width: 1000px;
+  main .container-main .container-photo-principale img {
+    max-width: 700px;
+  }
+  main .container-main .container-texte-presentation {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
   }
   main .container-texte-presentation {
     max-width: 800px;
