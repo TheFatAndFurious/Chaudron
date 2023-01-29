@@ -19,6 +19,7 @@ body {
   text-shadow: 0px 3px 3px grey;
   z-index: 999;
   box-shadow: 0px 3px 3px grey;
+  transition: ease-in-out 0.3s;
 }
 .container-banner .logo img {
   max-height: 160px;
@@ -46,6 +47,10 @@ body {
   margin-bottom: 5px;
   font-family: "Solitreo";
   opacity: 0.8;
+}
+
+.nav-up {
+  top: -150px;
 }
 
 main {
