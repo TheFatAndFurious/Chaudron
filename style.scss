@@ -219,6 +219,7 @@ main{
 
     .container-tarifs {
       font-family: 'Nunito';
+      padding-bottom: 5px;
       h3 {
         text-align: center;
         text-decoration: underline;
@@ -231,6 +232,7 @@ main{
         list-style:disc;
         max-width: 60%;
         margin: 0 auto;
+        margin-bottom: 5px;
 
       }
     }

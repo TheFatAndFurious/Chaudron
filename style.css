@@ -191,6 +191,7 @@ main .marche img {
 }
 main .container-tarifs {
   font-family: "Nunito";
+  padding-bottom: 5px;
 }
 main .container-tarifs h3 {
   text-align: center;
@@ -203,6 +204,7 @@ main .container-tarifs ul {
   list-style: disc;
   max-width: 60%;
   margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 footer {
