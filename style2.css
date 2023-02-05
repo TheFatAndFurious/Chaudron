@@ -17,7 +17,14 @@
     padding-top: 220px;
   }
   main .container {
-    max-width: 60%;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  main .container .container-evenements {
+    font-size: 30px;
+  }
+  main .container .container-evenements ul {
+    max-width: 30%;
   }
   main .horaires {
     max-width: 600px;
